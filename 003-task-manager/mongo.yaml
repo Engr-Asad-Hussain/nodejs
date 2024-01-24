@@ -1,0 +1,25 @@
+version: '3.1'
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    ports:
+      - 27017:27017
+
+
+# docker exec -it mongo bash
+# >> mongosh
+# >> use admin
+# >> db.auth("root", "root")
+# >> show dbs / show databases
+# >> show collections / show tables
+# >> show users
+# >> show roles
+
+# >> use products
+# >> db.user.insert({"name": "Samsung"})
+# >> db.user.find()
+# >> db.user.find().
