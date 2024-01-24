@@ -9,6 +9,16 @@ services:
     ports:
       - 27017:27017
 
+  task-manager:
+    image: task-manager
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: task-manager
+    environment:
+      - MONGO_URI=mongodb://root:root@mongo:27017
+    ports:
+      - 3000:3000
 
 # docker exec -it mongo bash
 # >> mongosh
