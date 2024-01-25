@@ -3,7 +3,19 @@ This project is a simple Task Manager application built with Node.js, Express, a
 
 
 ## Project structure
-...
+This Task Manager application follows the MVC (Model-View-Controller) architecture pattern, promoting a modular and organized structure for code implementation.
+
+- `app/` folder contains all the source code for this project.
+    - `controller/` contains the logic for each endpoint.
+    - `database/` folder contains a module which is used to connect with mongo database.
+    - `error/` folder contains the custom error handler class and useful functions.
+    - `middleware/` folder contains necessary middlewares i.e., route-not-exists, error handler, async-wrapper.
+    - `model/` contains the schema properties for the mongo database.
+    - `public/` folder contains static files used to render on web.
+    - `router/` contains all the routes for this project.
+    - `app.js` is the starting point of this project where several methods, middleware has been initiallized.
+    - `package.json` contains required dependencies.
+- `docs/` folder contains endpoints documentation via Postman Collection and architecture diagrams.
 
 
 ## Setup
@@ -21,9 +33,14 @@ This project is a simple Task Manager application built with Node.js, Express, a
     cd ./app
     npm install
     ```
-3. Start the server:
+4. Start the server:
     ```console
     npx nodemon ./app.js
+    ```
+5. Shutdown the database:
+    ```console
+    cd ..
+    docker-compose -f "docker-compose.yaml" down
     ```
 
 
