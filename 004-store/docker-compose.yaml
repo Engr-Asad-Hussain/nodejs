@@ -21,6 +21,9 @@ services:
       - comm_network
     environment:
       - MONGO_URI=mongodb://root:root@mongo:27017
+    depends_on:
+      - mongo
+    command: ["bash", "-c", "node ./populate.js; npm start"]
     ports:
       - 5000:5000
 

@@ -8,6 +8,6 @@ RUN npm install
 
 COPY ./store .
 
-EXPOSE 3000
+EXPOSE 5000
 
-CMD ["node", "./app.js"]
+CMD ["npm", "start"]
