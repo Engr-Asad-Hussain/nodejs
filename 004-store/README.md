@@ -21,8 +21,12 @@ To get started with the Product-Store, follow the documentation provided in the 
     ```
 3. Install dependencies:
     ```console
-    cd ./app
+    cd ./store
     npm install
+    ```
+5. Add sample products/items into the database.
+    ```console
+    node ./populate.js
     ```
 4. Start the server:
     ```console

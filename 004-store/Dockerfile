@@ -1,12 +1,12 @@
 FROM node:20.11.0
 
-WORKDIR /app
+WORKDIR /store
 
-COPY ./app/package.json .
+COPY ./store/package.json .
 
 RUN npm install
 
-COPY ./app .
+COPY ./store .
 
 EXPOSE 3000
 
