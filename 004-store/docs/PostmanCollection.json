@@ -12,14 +12,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{local}}/api/v1/products",
+					"raw": "{{local}}/api/healthCheck",
 					"host": [
 						"{{local}}"
 					],
 					"path": [
 						"api",
-						"v1",
-						"products"
+						"healthCheck"
 					]
 				}
 			},

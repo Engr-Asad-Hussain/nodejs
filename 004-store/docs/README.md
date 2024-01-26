@@ -11,12 +11,12 @@ Description: Get information about the application.
 
 Endpoint
 ```bash
-GET /api/v1/products
+GET /api/healthCheck
 ```
 
 Example
 ```bash
-curl http://localhost:5000/api/v1/products
+curl http://localhost:5000/api/healthCheck
 ```
 
 

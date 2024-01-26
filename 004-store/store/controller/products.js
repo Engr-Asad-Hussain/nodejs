@@ -73,8 +73,6 @@ const getAllProducts = async (req, res) => {
       }
     })
   }
-  console.log({ queryObject })
-
   let result = Product.find(queryObject)
   /*
    * sort the results based on the provided sort property
@@ -91,7 +89,6 @@ const getAllProducts = async (req, res) => {
    */
   if (fields) {
     const fieldString = fields.replace(' ', '').split(',').join(' ')
-    console.log(fieldString)
     result = result.select(fieldString)
   }
   /*
