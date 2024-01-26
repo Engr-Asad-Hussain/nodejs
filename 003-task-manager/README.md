@@ -18,6 +18,17 @@ This Task Manager application follows the MVC (Model-View-Controller) architectu
 - `docs/` folder contains endpoints documentation via Postman Collection and architecture diagrams.
 
 
+## Requirements
+Before diving into the Task-Manager, ensure that your development environment have `node` and `npm` installed.
+```bash
+node --version
+v20.11.0
+
+npm --version
+10.2.4
+```
+
+
 ## Setup
 1. Clone the repository:
     ```console
