@@ -1,0 +1,11 @@
+{
+  "window.zoomLevel": 1,
+  "editor.fontFamily": "Hack",
+  "editor.fontSize": 13,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#4448b050",
+  }
+}

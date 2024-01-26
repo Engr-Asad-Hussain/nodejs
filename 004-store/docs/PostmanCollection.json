@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "a804ace5-9d3e-447d-a79f-80a48701900c",
+		"name": "Product-Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13983217"
+	},
+	"item": [
+		{
+			"name": "App Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/api/v1/products",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/api/v1/products?numericFilter=price<=40",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "featured",
+							"value": "true",
+							"description": "[true, false]",
+							"disabled": true
+						},
+						{
+							"key": "company",
+							"value": "Router",
+							"description": "[Laptop, Mobile, Microphone, Router, Television]",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "De",
+							"description": "Search by character/string",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "name,price",
+							"description": "[\"price\", \"-price\", \"name,-price\", ...]",
+							"disabled": true
+						},
+						{
+							"key": "fields",
+							"value": "name,price,rating",
+							"description": "Used to only get certain fields from the result-set",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "5",
+							"description": "Maxium number of results per page - default page is 1",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Default 10 items will be shown per page.",
+							"disabled": true
+						},
+						{
+							"key": "numericFilter",
+							"value": "price<=40",
+							"description": "Numeric conditional filters"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products - Static",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/api/v1/products/static",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"static"
+					],
+					"query": [
+						{
+							"key": "featured",
+							"value": "false",
+							"description": "[true, false]",
+							"disabled": true
+						},
+						{
+							"key": "company",
+							"value": "Router",
+							"description": "[Laptop, Mobile, Microphone, Router, Television]",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "del",
+							"description": "Search by character/string",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "price",
+							"description": "[\"price\", \"-price\", \"name,-price\", ...]",
+							"disabled": true
+						},
+						{
+							"key": "fields",
+							"value": "name,price",
+							"description": "Used to only get certain fields from the result-set",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "4",
+							"description": "Maxium number of results per page - default page is 1",
+							"disabled": true
+						},
+						{
+							"key": "numericFilter",
+							"value": "20",
+							"description": "Numeric conditional filters",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "http://localhost:5000",
+			"type": "string"
+		}
+	]
+}

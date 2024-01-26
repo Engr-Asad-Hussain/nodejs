@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Dell",
+    "price": 50,
+    "company": "Laptop"
+  },
+  {
+    "name": "Samsung",
+    "price": 100,
+    "company": "Mobile"
+  },
+  {
+    "name": "TP Link",
+    "price": 150,
+    "company": "Router"
+  },
+  {
+    "name": "Starlink",
+    "price": 200,
+    "company": "Television"
+  },
+  {
+    "name": "Audionic",
+    "price": 250,
+    "company": "Microphone"
+  },
+  {
+    "name": "Apple",
+    "price": 20,
+    "company": "Laptop"
+  },
+  {
+    "name": "Infinix",
+    "price": 40,
+    "company": "Mobile"
+  },
+  {
+    "name": "Cisco",
+    "price": 60,
+    "company": "Router"
+  },
+  {
+    "name": "Echostar",
+    "price": 80,
+    "company": "Television"
+  },
+  {
+    "name": "Sony",
+    "price": 0,
+    "company": "Microphone"
+  }
+]
