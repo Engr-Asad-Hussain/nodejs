@@ -1,17 +1,11 @@
-## Job-Portal
-<!-- Welcome to the Product-Store API, a powerful and flexible Node.js, Express, and MongoDB-based application that brings a seamless experience to managing and retrieving product information. This project showcases my expertise in developing robust backend solutions and leveraging advanced filtering options to tailor the presentation of products in a store application. -->
+## Job-Portal Application
+The Job-Portal application is a Node.js Express-based web application that utilizes MongoDB as its non-relational database. It is designed for managing job applications through CRUD operations, employs JWT-based authentication, supports Swagger documentation, and includes custom error classes and middlewares.
 
 ## Features
-<!-- - **Express Framework**: Built on the renowned Express framework, this API ensures high performance and scalability. The lightweight and unopinionated nature of Express allows for rapid development without sacrificing functionality.
+- **Express Framework**: Built on the renowned Express framework, this API ensures high performance and scalability. The lightweight and unopinionated nature of Express allows for rapid development without sacrificing functionality.
 - **MongoDB Integration**: The use of MongoDB as the database allows for efficient and scalable data storage. Leveraging the NoSQL paradigm, the application can handle diverse product information with ease, accommodating the dynamic nature of modern e-commerce platforms.
-- **Advanced Filtering Options**: One of the standout features of this project is the incorporation of advanced filtering options, allowing for fine-grained control over the retrieved product data i.e.,
-  - `Selectively` retrieve specific fields from the result-set
-  - Dynamically `sort` the results based on various properties in both ascending and descending order
-  - `limit` and `page` properties to support pagination
-  - `Numeric` conditional filters enable precise data retrieval based on numerical criteria.  -->
-
-## Getting Started
-<!-- To get started with the Job-Portal, follow the documentation provided in the API Documentation docs/ folder. The guide will walk you through the available endpoints, parameters, and usage examples. -->
+- **Authentication**: Secure user authentication using JSON Web Tokens.
+- **Swagger Documentation**: Explore and test the API using Swagger documentation available at http://localhost:5000/api-docs. 
 
 
 ## Requirements
@@ -68,3 +62,5 @@ This project is Dockerized for easy deployment. Follow the steps below to build 
     ```console
     docker-compose -f "docker-compose.yaml" down
     ```
+
+Access the Swagger documentation at http://localhost:5000/docs for detailed API information.

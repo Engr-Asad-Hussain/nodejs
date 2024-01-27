@@ -11,12 +11,12 @@ services:
     ports:
       - 27017:27017
 
-  store:
-    image: store
+  job-portal:
+    image: job-portal
     build:
       context: .
       dockerfile: ./Dockerfile
-    container_name: store
+    container_name: job-portal
     networks:
       - comm_network
     environment:

@@ -19,17 +19,3 @@ services:
       - MONGO_URI=mongodb://root:root@mongo:27017
     ports:
       - 3000:3000
-
-# docker exec -it mongo bash
-# >> mongosh
-# >> use admin
-# >> db.auth("root", "root")
-# >> show dbs / show databases
-# >> show collections / show tables
-# >> show users
-# >> show roles
-
-# >> use products
-# >> db.user.insert({"name": "Samsung"})
-# >> db.user.find()
-# >> db.user.find().
