@@ -5,7 +5,7 @@ The Job-Portal application is a Node.js Express-based web application that utili
 - **Express Framework**: Built on the renowned Express framework, this API ensures high performance and scalability. The lightweight and unopinionated nature of Express allows for rapid development without sacrificing functionality.
 - **MongoDB Integration**: The use of MongoDB as the database allows for efficient and scalable data storage. Leveraging the NoSQL paradigm, the application can handle diverse product information with ease, accommodating the dynamic nature of modern e-commerce platforms.
 - **Authentication**: Secure user authentication using JSON Web Tokens.
-- **Swagger Documentation**: Explore and test the API using Swagger documentation available at http://localhost:5000/api-docs. 
+- **Swagger Documentation**: Explore and test the API using Swagger documentation available at http://localhost:5000/docs. 
 
 
 ## Requirements
