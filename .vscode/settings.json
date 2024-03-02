@@ -7,5 +7,12 @@
   "workbench.colorTheme": "Default Dark+",
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#4448b050",
-  }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.arrowParens": "always",
+  "prettier.bracketSpacing": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.semi": true
 }
